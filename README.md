@@ -84,7 +84,7 @@ python src/test1_BGL_with_clean.py 2>&1 | tee logs/test1_BGL_with_clean.log
 ```
 - Fine tuning model:
 
-**Human expert manualy work** here: need to verify and correct all labels in test1_b60_mismatch.json. The number of logs should be small. Add the new logs test1_b60_mismatch.json and train_dataset_b.json to generate train_dataset_b_new1.json.
+**Human expert manualy work** here: need to verify and correct all labels in test1_b60_mismatch.json. The number of logs should be small. Add the new logs test1_b60_mismatch.json and train_dataset_b.json to generate train_dataset_b_new1.json. For Spirit10G and Thunderbird10M, we can do tuning purposed balancing processing to futher reduce the number of logs for training and testing.
 
 **re-train**: Load model from above saved model and re_train, compare train result with train_BGL_with_clean.log(total dataset items:  mismatch: Val Loss: Precision: Recall: F1:)
 ```
