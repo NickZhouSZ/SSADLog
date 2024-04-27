@@ -4,7 +4,7 @@ SSADLog:
 ## Paper
 SSADLog: Whole Lifecycle Tuning Anomaly Detection with Small Sample Logs
 
-[Repository for the paper](https://www.researchgate.net/publication/375629925_SSADLog_Whole_Lifecycle_Tuning_Anomaly_Detection_with_Small_Sample_Logs)
+[Repository for the paper](https://www.researchsquare.com/article/rs-3588406/v2)
 
 **Abstract:** 
 Log messages play a critical role in system analysis and issue resolution, particularly in complex software-intensive systems that demand high availability and quality assurance. However, log-based anomaly detection faces three major challenges. Firstly, millions of log data poses a significant labeling challenge. Secondly, log data tends to exhibit a severe class imbalance. Thirdly, the task of anomaly detection in such massive datasets requires both high accuracy and efficiency. Numerous deep learning based methods have been proposed to tackle those challenges. Yet, a comprehensive solution that effectively addresses all these issues has remained elusive. After meticulously analyzing log messages from some stable systems, we have observed a common trend: the number of unique anomaly logs is consistently small. Based on this observation, we present a novel framework called ``Whole Lifecycle Tuning Anomaly Detection with Small Sample Logs'' (SSADLog). SSADLog introduces a hyper-efficient log data pre-processing method that generates a representative subset of small sample logs. It leverages a pre-trained bidirectional encoder representations from transformers (BERT) language model to create contextual word embeddings. Furthermore, a semi-supervised fine-tuning process is employed for enhancing detection accuracy. SSADLog distinguishes itself with its capability to achieve high-performance iterations by fine-tuning language models with small size log samples. Extensive experimental evaluations show that SSADLog greatly reduces the effort to detect anomaly log messages from millions of daily new logs and outperforms the previous representative methods across various log datasets in terms of precision, recall, and F1 score.
@@ -124,4 +124,4 @@ python src/test2_BGL_with_clean.py 2>&1 | tee logs/test2_BGL_with_clean.log
 ![Performance comparison](doc/Performance_comparison.png)
 
 ## Citation
-Zhou, Zhisheng & Zhou, Meixiu & Wu, Axin & Xia, Jie & Liu, Weiping. (2023). SSADLog: Whole Lifecycle Tuning Anomaly Detection with Small Sample Logs. 10.21203/rs.3.rs-3588406/v1. 
+Zhisheng Zhou, Meixiu Zhou, Axin Wu et al. SSADLog: Whole Lifecycle Tuning Anomaly Detection with Small Sample Logs, 23 April 2024, PREPRINT (Version 2) available at Research Square [https://doi.org/10.21203/rs.3.rs-3588406/v2]
